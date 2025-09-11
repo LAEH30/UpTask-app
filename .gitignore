@@ -1,0 +1,31 @@
+# ---------------------------
+# Composer dependencies
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+*.txt
+
+# Cache & temporary files
+/cache/
+*.cache
+*.tmp
+*.bak
+
+# IDE / Editor config
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node 
+node_modules/
+public/build
