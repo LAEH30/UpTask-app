@@ -6,22 +6,22 @@ use MVC\Router;
 
 class Logincontroller {
     public static function login(Router $router){
-        $mensaje = "hola mundo";
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         }
         // Render a la vista
         $router->render('auth/login',[
-            'titulo' => 'Iniciar Sesión',
-            'mensaje' => $mensaje
+            'titulo' => 'Iniciar Sesión'
         ]);
     }
-    public static function create(){
-        echo "Desde create";
+    public static function create(Router $router)
+    {
 
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
+        $router->render('auth/create', [
+            'titulo' => 'Crear Cuenta'
+        ]);
     }
     public static function reset(){
         echo "Desde reset";
