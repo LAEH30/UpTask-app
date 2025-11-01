@@ -14,13 +14,19 @@ $router->post('/', [Logincontroller::class, 'login']);
 $router->get('/create', [Logincontroller::class, 'create']);
 $router->post('/create', [Logincontroller::class, 'create']);
 
-//Resetear Password
+//enviar instrucciones
 $router->get('/reset', [Logincontroller::class, 'reset']);
 $router->post('/reset', [Logincontroller::class, 'reset']);
 
-//Mensaje 
+//restablecer password
+$router->get('/restablecer', [Logincontroller::class, 'restablecer']);
+$router->post('/restablecer', [Logincontroller::class, 'restablecer']);
+
+//confirmar 
 $router->get('/mensaje', [Logincontroller::class, 'mensaje']);
 $router->get('/confirmar', [Logincontroller::class, 'confirmar']);
+
+
 
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador

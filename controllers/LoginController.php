@@ -50,7 +50,7 @@ class Logincontroller
     }
     public static function confirmar(Router $router)
     {
-        $router->render('auth/restablecer', [
+        $router->render('auth/confirmar', [
             'titulo' => 'Confirma tu cuenta UpTask'
         ]);
     }
