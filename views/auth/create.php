@@ -42,10 +42,10 @@
                     name="password2">
             </div>
 
-            <input type="submit" class="boton">
+            <input type="submit" class="boton" value="Enviar">
         </form>
         <div class="acciones">
-            <a href="/create">¿Aún no tienes una cuenta? Crea una</a>
+            <a href="/">¿Ya tienes cuenta? Inicia Sesión</a>
             <a href="/reset">¿Olvidaste tu password?</a>
         </div>
     </div>
