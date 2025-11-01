@@ -23,12 +23,13 @@ class Logincontroller {
             'titulo' => 'Crear Cuenta'
         ]);
     }
-    public static function reset(){
-        echo "Desde reset";
+    public static function reset(Router $router){
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-
         }
+        $router->render('auth/reset', [
+            'titulo' => 'Restablecer Password'
+        ]);
     }
     public static function mensaje(){
         echo "Desde mensaje";

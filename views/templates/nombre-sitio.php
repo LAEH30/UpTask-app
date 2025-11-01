@@ -1,2 +1,2 @@
     <h1 class="uptask">UpTask</h1>
-    <p class="tagline">Crea tu cuenta</p>
+    <p class="tagline"><?php echo $titulo; ?></p>
